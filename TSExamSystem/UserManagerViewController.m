@@ -32,7 +32,7 @@
     UIView * footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 1)];
     footerView.backgroundColor = [UIColor clearColor];
     self.tabelView.tableFooterView = footerView;
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithRed:236.0/255 green:235.0/255 blue:235.0/255 alpha:1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,7 +58,6 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        cell.backgroundColor = [UIColor darkGrayColor];
     }
     cell.textLabel.text = @"  用户名                  密码                    删除";
     return cell;

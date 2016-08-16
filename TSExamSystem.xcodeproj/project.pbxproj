@@ -16,7 +16,6 @@
 		490004E11D59E493006CA716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490004DF1D59E493006CA716 /* LaunchScreen.storyboard */; };
 		490004EA1D59E4EB006CA716 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490004E91D59E4EB006CA716 /* LoginViewController.m */; };
 		490004ED1D59E50B006CA716 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490004EC1D59E50B006CA716 /* BaseViewController.m */; };
-		490004F31D5DC5E7006CA716 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490004F21D5DC5E7006CA716 /* HomeViewController.m */; };
 		490004FA1D5E0D40006CA716 /* TaskManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490004F91D5E0D40006CA716 /* TaskManagerViewController.m */; };
 		490004FD1D5E1171006CA716 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490004FC1D5E1171006CA716 /* TaskDetailViewController.m */; };
 		490005001D5E118F006CA716 /* UserManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490004FF1D5E118F006CA716 /* UserManagerViewController.m */; };
@@ -25,6 +24,8 @@
 		4900050A1D5EBA2C006CA716 /* TaskGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490005091D5EBA2C006CA716 /* TaskGetViewController.m */; };
 		490005101D62FDF0006CA716 /* AdiminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900050F1D62FDF0006CA716 /* AdiminViewController.m */; };
 		490005131D631AC3006CA716 /* ExamDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490005121D631AC3006CA716 /* ExamDetailViewController.m */; };
+		490005191D632B22006CA716 /* MonitorExamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490005181D632B22006CA716 /* MonitorExamViewController.m */; };
+		4900051C1D632DAC006CA716 /* MonitorHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900051B1D632DAC006CA716 /* MonitorHomeViewController.m */; };
 		B94EC4B6211C7F60964C6852 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C71FE1D41CA6E3D06B998D2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +46,6 @@
 		490004E91D59E4EB006CA716 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		490004EB1D59E50B006CA716 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		490004EC1D59E50B006CA716 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		490004F11D5DC5E7006CA716 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		490004F21D5DC5E7006CA716 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		490004F71D5E0577006CA716 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		490004F81D5E0D40006CA716 /* TaskManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskManagerViewController.h; sourceTree = "<group>"; };
 		490004F91D5E0D40006CA716 /* TaskManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskManagerViewController.m; sourceTree = "<group>"; };
@@ -64,6 +63,10 @@
 		4900050F1D62FDF0006CA716 /* AdiminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdiminViewController.m; sourceTree = "<group>"; };
 		490005111D631AC3006CA716 /* ExamDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamDetailViewController.h; sourceTree = "<group>"; };
 		490005121D631AC3006CA716 /* ExamDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamDetailViewController.m; sourceTree = "<group>"; };
+		490005171D632B22006CA716 /* MonitorExamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorExamViewController.h; sourceTree = "<group>"; };
+		490005181D632B22006CA716 /* MonitorExamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorExamViewController.m; sourceTree = "<group>"; };
+		4900051A1D632DAC006CA716 /* MonitorHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorHomeViewController.h; sourceTree = "<group>"; };
+		4900051B1D632DAC006CA716 /* MonitorHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorHomeViewController.m; sourceTree = "<group>"; };
 		5C71FE1D41CA6E3D06B998D2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		926D55E3961D61AFBB2FBCF6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,8 +122,10 @@
 				490004D51D59E493006CA716 /* ViewController.m */,
 				490004E81D59E4EB006CA716 /* LoginViewController.h */,
 				490004E91D59E4EB006CA716 /* LoginViewController.m */,
-				490004F11D5DC5E7006CA716 /* HomeViewController.h */,
-				490004F21D5DC5E7006CA716 /* HomeViewController.m */,
+				4900051A1D632DAC006CA716 /* MonitorHomeViewController.h */,
+				4900051B1D632DAC006CA716 /* MonitorHomeViewController.m */,
+				490005171D632B22006CA716 /* MonitorExamViewController.h */,
+				490005181D632B22006CA716 /* MonitorExamViewController.m */,
 				490005081D5EBA2C006CA716 /* TaskGetViewController.h */,
 				490005091D5EBA2C006CA716 /* TaskGetViewController.m */,
 				490004F81D5E0D40006CA716 /* TaskManagerViewController.h */,
@@ -298,13 +303,14 @@
 				490004DC1D59E493006CA716 /* TSExamSystem.xcdatamodeld in Sources */,
 				490004ED1D59E50B006CA716 /* BaseViewController.m in Sources */,
 				490005101D62FDF0006CA716 /* AdiminViewController.m in Sources */,
+				4900051C1D632DAC006CA716 /* MonitorHomeViewController.m in Sources */,
 				490004D61D59E493006CA716 /* ViewController.m in Sources */,
 				490004D31D59E493006CA716 /* AppDelegate.m in Sources */,
 				490004D01D59E493006CA716 /* main.m in Sources */,
+				490005191D632B22006CA716 /* MonitorExamViewController.m in Sources */,
 				490005071D5E2D3A006CA716 /* GUITabScrollView.m in Sources */,
 				490004FA1D5E0D40006CA716 /* TaskManagerViewController.m in Sources */,
 				4900050A1D5EBA2C006CA716 /* TaskGetViewController.m in Sources */,
-				490004F31D5DC5E7006CA716 /* HomeViewController.m in Sources */,
 				490004FD1D5E1171006CA716 /* TaskDetailViewController.m in Sources */,
 				490004EA1D59E4EB006CA716 /* LoginViewController.m in Sources */,
 			);

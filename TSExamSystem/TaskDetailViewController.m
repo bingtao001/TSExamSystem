@@ -23,6 +23,7 @@
 @implementation TaskDetailViewController
 - (void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
 }
 
 - (void)viewDidLoad {
@@ -178,6 +179,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"点击了%ld 行", (long)indexPath.row);
+    self.hidesBottomBarWhenPushed = YES;
     ExamDetailViewController *examVC = [[ExamDetailViewController alloc] init];
     [self.navigationController pushViewController:examVC animated:YES];
 }

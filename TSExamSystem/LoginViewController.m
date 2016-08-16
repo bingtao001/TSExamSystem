@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import <Masonry/Masonry.h>
 #import "Macro.h"
-#import "HomeViewController.h"
+#import "MonitorHomeViewController.h"
 #import "TaskGetViewController.h"
 #import "TaskManagerViewController.h"
 #import "TaskDetailViewController.h"
@@ -180,6 +180,11 @@
 }
 
 - (void)login{
+    
+    MonitorHomeViewController *monitorVC = [[MonitorHomeViewController alloc] init];
+    [self.navigationController pushViewController:monitorVC animated:YES];
+    return;
+    
     TaskGetViewController *taskGetVC = [[TaskGetViewController alloc] init];
     taskGetVC.tabBarItem.title = @"获取任务";
     TaskManagerViewController *taskManagerVC = [[TaskManagerViewController alloc] init];

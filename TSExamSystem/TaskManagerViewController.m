@@ -76,13 +76,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"点击了%ld 行", (long)indexPath.section);
+    self.hidesBottomBarWhenPushed = YES;
     TaskDetailViewController *taskVC = [[TaskDetailViewController alloc] init];
     [self.navigationController pushViewController:taskVC animated:NO];
-//    [self presentViewController:taskVC animated:NO completion:^{
-//    }];
-//    UIView *detailView = [[UIView alloc] initWithFrame:self.view.bounds];
-//    detailView.backgroundColor = [UIColor purpleColor];
-//    [self.view addSubview:detailView];
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 @end
