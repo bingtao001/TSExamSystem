@@ -8,15 +8,23 @@
 
 #import "LoginViewController.h"
 #import <Masonry/Masonry.h>
-#define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
-
-#define ScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
+#import "Macro.h"
+#import "HomeViewController.h"
+#import "TaskGetViewController.h"
+#import "TaskManagerViewController.h"
+#import "TaskDetailViewController.h"
+#import "UserManagerViewController.h"
+#import "AdiminViewController.h"
 @interface LoginViewController ()
 
 @property (nonatomic, strong) UITextView *channelTextView;
 @property (nonatomic, strong) UITextView *userNameTextView;
 @property (nonatomic, strong) UITextView *passwordTextView;
 @property (nonatomic, strong) UIButton *loginBtn;
+@property (nonatomic, copy) NSMutableArray *myArr;
+
+@property (nonatomic, copy) NSString *copStr;
+@property (nonatomic, strong) NSString *strongStr;
 @end
 
 @implementation LoginViewController
@@ -25,12 +33,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self drawView];
+    [self configView];
     self.view.backgroundColor = [UIColor whiteColor];
 //    self.view.backgroundColor = [UIColor colorWithRed:91/255.0 green:227.0/255 blue:174.0/255 alpha:1];
 }
 
-- (void)drawView{
+- (void)configView{
     
     UIImageView *logoImage = [[UIImageView alloc] init];
     logoImage.backgroundColor = [UIColor redColor];
@@ -145,6 +153,7 @@
     [self.loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     self.loginBtn.titleLabel.font = [UIFont systemFontOfSize:17];
     self.loginBtn.backgroundColor = [UIColor colorWithRed:183.0/255 green:232.0/255 blue:210.0/255 alpha:1];
+    [self.loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
     [middleView addSubview:self.loginBtn];
     [self.loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(0);
@@ -152,6 +161,8 @@
         make.bottom.mas_equalTo(0);
         make.height.mas_equalTo(45);
     }];
+    
+    [self.loginBtn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
     
     
     UILabel *collegeName = [[UILabel alloc] init];
@@ -166,8 +177,22 @@
         make.bottom.mas_equalTo(-40);
         make.height.mas_equalTo(80);
     }];
+}
 
-
+- (void)login{
+    TaskGetViewController *taskGetVC = [[TaskGetViewController alloc] init];
+    taskGetVC.tabBarItem.title = @"获取任务";
+    TaskManagerViewController *taskManagerVC = [[TaskManagerViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:taskManagerVC];
+    nav.tabBarItem.title = @"任务管理";
+    UserManagerViewController *userManagerVC = [[UserManagerViewController alloc] init];
+    userManagerVC.tabBarItem.title = @"用户管理";
+    AdiminViewController *adiminVC = [[AdiminViewController alloc] init];
+    adiminVC.tabBarItem.title = @"Adimin";
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    tabBar.viewControllers = @[taskGetVC, nav, userManagerVC, adiminVC];
+    tabBar.view.backgroundColor = [UIColor greenColor];
+    [[UIApplication sharedApplication].delegate window] .rootViewController = tabBar;
 }
 
 - (void)didReceiveMemoryWarning {
