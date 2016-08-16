@@ -24,6 +24,7 @@
 		490005071D5E2D3A006CA716 /* GUITabScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 490005051D5E2D3A006CA716 /* GUITabScrollView.m */; };
 		4900050A1D5EBA2C006CA716 /* TaskGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490005091D5EBA2C006CA716 /* TaskGetViewController.m */; };
 		490005101D62FDF0006CA716 /* AdiminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900050F1D62FDF0006CA716 /* AdiminViewController.m */; };
+		490005131D631AC3006CA716 /* ExamDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490005121D631AC3006CA716 /* ExamDetailViewController.m */; };
 		B94EC4B6211C7F60964C6852 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C71FE1D41CA6E3D06B998D2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		490005091D5EBA2C006CA716 /* TaskGetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskGetViewController.m; sourceTree = "<group>"; };
 		4900050E1D62FDF0006CA716 /* AdiminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdiminViewController.h; sourceTree = "<group>"; };
 		4900050F1D62FDF0006CA716 /* AdiminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdiminViewController.m; sourceTree = "<group>"; };
+		490005111D631AC3006CA716 /* ExamDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamDetailViewController.h; sourceTree = "<group>"; };
+		490005121D631AC3006CA716 /* ExamDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamDetailViewController.m; sourceTree = "<group>"; };
 		5C71FE1D41CA6E3D06B998D2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		926D55E3961D61AFBB2FBCF6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +127,8 @@
 				490004F91D5E0D40006CA716 /* TaskManagerViewController.m */,
 				490004FB1D5E1171006CA716 /* TaskDetailViewController.h */,
 				490004FC1D5E1171006CA716 /* TaskDetailViewController.m */,
+				490005111D631AC3006CA716 /* ExamDetailViewController.h */,
+				490005121D631AC3006CA716 /* ExamDetailViewController.m */,
 				4900050E1D62FDF0006CA716 /* AdiminViewController.h */,
 				4900050F1D62FDF0006CA716 /* AdiminViewController.m */,
 				490004FE1D5E118F006CA716 /* UserManagerViewController.h */,
@@ -287,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490005131D631AC3006CA716 /* ExamDetailViewController.m in Sources */,
 				490005061D5E2D3A006CA716 /* GUITabPagerViewController.m in Sources */,
 				490005001D5E118F006CA716 /* UserManagerViewController.m in Sources */,
 				490004DC1D59E493006CA716 /* TSExamSystem.xcdatamodeld in Sources */,
